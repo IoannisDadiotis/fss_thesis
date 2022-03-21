@@ -23,23 +23,15 @@ The components are connected as shown below:
 
 ![image](https://user-images.githubusercontent.com/75118133/159374038-3470c8cd-0274-4bee-ba54-6d72d12e9dba.png)
 
-
-
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/75118133/159374038-3470c8cd-0274-4bee-ba54-6d72d12e9dba.png" width="600" />
-  <img width="10" />
-  <img src="https://user-images.githubusercontent.com/75118133/159375021-d0e04246-2cdb-4cbb-838e-31c801a3b4b3.png" width="300" /> 
-</p>
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/75118133/159375447-395f4a6d-1de8-4425-b5af-53eb7837ac1e.png" width="400" />
+  <img src="https://user-images.githubusercontent.com/75118133/159375447-395f4a6d-1de8-4425-b5af-53eb7837ac1e.png" width="450" />
   <img width="10" />
   <img src="https://user-images.githubusercontent.com/75118133/159375021-d0e04246-2cdb-4cbb-838e-31c801a3b4b3.png" width="300" /> 
 </p>
 
 All components are installed onboard a small mobile robot which is equipped with a esp8266 Wi-Fi module for wireless communication with a laptop.
 
-![image](https://user-images.githubusercontent.com/75118133/159376847-4b2ff712-d9be-4eac-9caa-80cc84c042f4.png)
+<!--![image](https://user-images.githubusercontent.com/75118133/159376847-4b2ff712-d9be-4eac-9caa-80cc84c042f4.png)-->
 
 
 ## Fabric force control
@@ -55,6 +47,26 @@ The force control system of the follower is comprised of two parallel PID contro
   <img src="https://user-images.githubusercontent.com/75118133/159376542-c8e2db9f-2235-49e5-8044-274fb0c01a08.png" width="350" /> 
 </p>
 
+## Running the system
+* The onboard Nucleo MCU accepts code in C++ and can be programmed through the [mbed online compiler] while in cabled connection with the laptop. The MCU keeps the code that was last passed and runs it every time you switch it on or press the reset button.
+* The Wifi communication between laptop and robot as well as the force control scheme is implemented in Python.
+* To read the data from the FSS with the robot not moving and connected through usb cable with the laptop, you have to pass the code of `src/mbed/Static_experiments_Nucleo.txt` to the MCU throught the online compiler.
+* For the wireless force control experiments (connection through Wi-Fi) the procedure is:
+- Pass the code at `src/mbed/Control experiments_Nucleo_follower.txt` and `src/mbed/Control experiments_Nucleo_leader.txt` to the follower and leader robots, respectively. Remember the follower is equipped with the FSS.
+- Run the code `src/wifi_communication/server.py` on the laptop
+- Switch-on or reset the robots.
+- To succesfully connect the robots with the laptop the IPs of them should be properly configured in the above files.
+
+## Pubication
+This work is related with the above publications:
+
+The fabric gripper has been developed in:
+
+## Contributors
+This project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece by Ioannis Dadiotis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
+
+![image](https://user-images.githubusercontent.com/75118133/159381029-ff271c1e-f995-42a1-a11a-2c50890c7e5e.png)
 
 [A 3-Finger Robotic Gripper for Grasping Fabrics Based on Cams-Followers Mechanism]: https://link.springer.com/chapter/10.1007/978-3-319-61276-8_64
 [Robotshop.com]: https://www.robotshop.com/ca/en/strain-gauge-load-cell-amplifier-shield-2ch.html?gclid=CjwKCAjwxOCRBhA8EiwA0X8hi5xmquA2swnKK2UYyfPzypNpCCVFiv0ISvpgf9J5K1QTpcKl0yu6_RoCApkQAvD_BwE
+[mbed online compiler]: https://os.mbed.com/handbook/mbed-Compiler
