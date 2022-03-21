@@ -55,7 +55,7 @@ The force control system of the follower is comprised of two parallel PID contro
 - Pass the code at `src/mbed/Control experiments_Nucleo_follower.txt` and `src/mbed/Control experiments_Nucleo_leader.txt` to the follower and leader robots, respectively. Remember the follower is equipped with the FSS.
 - Run the code `src/wifi_communication/server.py` on the laptop
 - Switch-on or reset the robots.
-- To succesfully connect the robots with the laptop the IPs of them should be properly configured in the above files.
+- To succesfully connect the robots with the laptop their IPs should be properly configured in the above files.
 
 ## Pubication
 This work is related with the above publications:
