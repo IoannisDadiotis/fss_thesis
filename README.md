@@ -9,7 +9,7 @@ The developed force sensory system (FSS) is based on strain gauge-sensing and ta
 The measurement chain of the FSS consists of:
 
 * 4 strain gauges 350 Ohm Tokyo Instruments FLAB-3-350-11-1LJB-F
-* 2 custom made half Wheatstone bridges
+* 2 custom half Wheatstone bridges (custom made with 350 Ohm resistors)
 * A Load Cell/Wheatstone Shield Amplifier bought by [Robotshop.com]. The shield is equipped with an AD8426 amplifier from Analog Devices that achieves gain up to 1000.
 * A Nucleo F334R8 microcontroller.
 
@@ -19,7 +19,7 @@ The measurement chain of the FSS consists of:
   <img src="https://user-images.githubusercontent.com/75118133/159373044-4143eb60-5efa-44cb-ad3a-6fe17e54c543.png" width="300" /> 
 </p-->
 
-The components are connected as shown below:
+The sensing principle of the FSS is shown below:
 
 ![image](https://user-images.githubusercontent.com/75118133/159374038-3470c8cd-0274-4bee-ba54-6d72d12e9dba.png)
 
@@ -48,6 +48,8 @@ The force control system of the follower is comprised of two parallel PID contro
 </p>
 
 ## Running the system
+<video src="https://user-images.githubusercontent.com/75118133/159454116-3cbb1354-e520-45d6-81af-7b01ad9505b4.mp4" width="10"/>
+
 * The onboard Nucleo MCU accepts code in C++ and can be programmed through the [mbed online compiler] while in cabled connection with the laptop. The MCU keeps the code that was last passed and runs it every time you switch it on or press the reset button.
 * The Wifi communication between laptop and robot as well as the force control scheme is implemented in Python.
 * To read the data from the FSS with the robot not moving and connected through usb cable with the laptop, you have to pass the code of `src/mbed/Static_experiments_Nucleo.txt` to the MCU throught the online compiler.
@@ -58,10 +60,12 @@ The force control system of the follower is comprised of two parallel PID contro
   - To succesfully connect the robots with the laptop their IPs should be properly configured in the above files.
 
 ## Pubication
-This work is related with the above publication:
+This work is related with the above publications:
 
 * ID Dadiotis, JS Sakellariou, PN Koustoumpardis, [Development of a low-cost force sensory system for force control via small grippers of cooperative mobile robots used for fabric manipulation]. Adv. Mechanisms and Machine Science 2021, 102, 47–58.
-The fabric gripper has been developed in:
+* Dadiotis I. Development of a force sensory system for the control and coordination of mobile robots
+handling fabrics, Nemertes: Institutional Repository of University of Patras, Patras, Greece, 2020 (in Greek)
+http://hdl.handle.net/10889/13747
 
 ## Contributors
 This project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece by Ioannis Dadiotis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
