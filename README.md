@@ -1,5 +1,4 @@
 # fss_fabric_force_control
-The project was carried out between 2019-2020
 
 ## Development of the force sensory system
 The developed force sensory system (FSS) is based on strain gauge-sensing and targeted for the fabric gripper that is presented in:
@@ -73,7 +72,7 @@ handling fabrics, Nemertes: Institutional Repository of University of Patras, Pa
 http://hdl.handle.net/10889/13747
 
 ## Contributors
-This project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece by Ioannis Dadiotis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
+This project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece during 2019-2020 by Ioannis Dadiotis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
 
 ![image](https://user-images.githubusercontent.com/75118133/159381029-ff271c1e-f995-42a1-a11a-2c50890c7e5e.png)
 
