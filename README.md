@@ -49,16 +49,20 @@ The force control system of the follower is comprised of two parallel PID contro
 </p>
 
 ## Running the system
-<video src="https://user-images.githubusercontent.com/75118133/159454116-3cbb1354-e520-45d6-81af-7b01ad9505b4.mp4" width="10"/>
 
 * The onboard Nucleo MCU accepts code in C++ and can be programmed through the [mbed online compiler] while in cabled connection with the laptop. The MCU keeps the code that was last passed and runs it every time you switch it on or press the reset button.
 * The Wifi communication between laptop and robot as well as the force control scheme is implemented in Python.
 * To read the data from the FSS with the robot not moving and connected through usb cable with the laptop, you have to pass the code of `src/mbed/Static_experiments_Nucleo.txt` to the MCU throught the online compiler.
+
+<video src="https://user-images.githubusercontent.com/75118133/159462987-5993ec86-665d-436e-bd1f-fa40b0cb05e0.mp4" width="100" />
+
 * For the wireless force control experiments (connection through Wi-Fi) the procedure is:
   - Pass the code at `src/mbed/Control experiments_Nucleo_follower.txt` and `src/mbed/Control experiments_Nucleo_leader.txt` to the follower and leader robots, respectively. Remember the follower is equipped with the FSS.
   - Run the code `src/wifi_communication/server.py` on the laptop
   - Switch-on or reset the robots.
   - To succesfully connect the robots with the laptop their IPs should be properly configured in the above files.
+            
+<video src="https://user-images.githubusercontent.com/75118133/159462351-496300cc-54c7-4184-9372-389f6fe114bc.mp4" width="100" />
 
 ## Pubication
 This work is related with the above publications:
