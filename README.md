@@ -1,5 +1,5 @@
 # fss_fabric_force_control
-Thesis: "Development of a force sensory system for the control and coordination of mobile robots handling fabrics"
+The project was carried out between 2019-2020
 
 ## Development of the force sensory system
 The developed force sensory system (FSS) is based on strain gauge-sensing and targeted for the fabric gripper that is presented in:
