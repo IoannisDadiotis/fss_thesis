@@ -4,7 +4,7 @@ Thesis: "Development of a force sensory system for the control and coordination 
 ## Development of the force sensory system
 The developed force sensory system (FSS) is based on strain gauge-sensing and targeted for the fabric gripper that is presented in:
 
-A 3-Finger Robotic Gripper for Grasping Fabrics Based on Cams-Followers Mechanism
+* PN Koustoumpardis, S Smyrnis, NA Aspragathos, [A 3-Finger Robotic Gripper for Grasping Fabrics Based on Cams-Followers Mechanism], International Conference on Robotics in Alpe-Adria Danube Region, 2017
 
 The measurement chain of the FSS consists of:
 
@@ -52,14 +52,15 @@ The force control system of the follower is comprised of two parallel PID contro
 * The Wifi communication between laptop and robot as well as the force control scheme is implemented in Python.
 * To read the data from the FSS with the robot not moving and connected through usb cable with the laptop, you have to pass the code of `src/mbed/Static_experiments_Nucleo.txt` to the MCU throught the online compiler.
 * For the wireless force control experiments (connection through Wi-Fi) the procedure is:
-- Pass the code at `src/mbed/Control experiments_Nucleo_follower.txt` and `src/mbed/Control experiments_Nucleo_leader.txt` to the follower and leader robots, respectively. Remember the follower is equipped with the FSS.
-- Run the code `src/wifi_communication/server.py` on the laptop
-- Switch-on or reset the robots.
-- To succesfully connect the robots with the laptop their IPs should be properly configured in the above files.
+  - Pass the code at `src/mbed/Control experiments_Nucleo_follower.txt` and `src/mbed/Control experiments_Nucleo_leader.txt` to the follower and leader robots, respectively. Remember the follower is equipped with the FSS.
+  - Run the code `src/wifi_communication/server.py` on the laptop
+  - Switch-on or reset the robots.
+  - To succesfully connect the robots with the laptop their IPs should be properly configured in the above files.
 
 ## Pubication
-This work is related with the above publications:
+This work is related with the above publication:
 
+* ID Dadiotis, JS Sakellariou, PN Koustoumpardis, [Development of a low-cost force sensory system for force control via small grippers of cooperative mobile robots used for fabric manipulation]. Adv. Mechanisms and Machine Science 2021, 102, 47–58.
 The fabric gripper has been developed in:
 
 ## Contributors
@@ -67,6 +68,7 @@ This project was conducted at the Robotics Group, Department of Mechanical Engin
 
 ![image](https://user-images.githubusercontent.com/75118133/159381029-ff271c1e-f995-42a1-a11a-2c50890c7e5e.png)
 
-[A 3-Finger Robotic Gripper for Grasping Fabrics Based on Cams-Followers Mechanism]: https://link.springer.com/chapter/10.1007/978-3-319-61276-8_64
+[A 3-finger robotic gripper for grasping fabrics based on CAMS-followers mechanism]: https://link.springer.com/chapter/10.1007/978-3-319-61276-8_64
 [Robotshop.com]: https://www.robotshop.com/ca/en/strain-gauge-load-cell-amplifier-shield-2ch.html?gclid=CjwKCAjwxOCRBhA8EiwA0X8hi5xmquA2swnKK2UYyfPzypNpCCVFiv0ISvpgf9J5K1QTpcKl0yu6_RoCApkQAvD_BwE
+[Development of a low-cost force sensory system for force control via small grippers of cooperative mobile robots used for fabric manipulation]: https://link.springer.com/chapter/10.1007/978-3-030-75259-0_6
 [mbed online compiler]: https://os.mbed.com/handbook/mbed-Compiler
