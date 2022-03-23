@@ -65,7 +65,7 @@ https://user-images.githubusercontent.com/75118133/159466671-b49ed355-f67b-4f78-
 This work is related with the above publications:
 
 * ID Dadiotis, JS Sakellariou, PN Koustoumpardis, [Development of a low-cost force sensory system for force control via small grippers of cooperative mobile robots used for fabric manipulation]. Adv. Mechanisms and Machine Science 2021, 102, 47–58.
-* Dadiotis I. Development of a force sensory system for the control and coordination of mobile robots
+* I. Dadiotis Development of a force sensory system for the control and coordination of mobile robots
 handling fabrics, Nemertes: Institutional Repository of University of Patras, Patras, Greece, 2020 (in Greek)
 http://hdl.handle.net/10889/13747
 
