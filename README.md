@@ -70,7 +70,7 @@ handling fabrics, Nemertes: Institutional Repository of University of Patras, Pa
 http://hdl.handle.net/10889/13747
 
 ## Contributors
-This project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece during 2019-2020 by Ioannis Dadiotis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
+This thesis project was conducted at the Robotics Group, Department of Mechanical Engineering and Aeronautics at the University of Patras, Greece during 2019-2020 by Ioannis Dadiotis and supervised by Dr. J. Sakellariou and Dr. P. Koustoumpardis. Christos Chrysikos and Charalampos Rodopoulos contributed to the implementation of the WiFi communication and force control.
 
 ![image](https://user-images.githubusercontent.com/75118133/159381029-ff271c1e-f995-42a1-a11a-2c50890c7e5e.png)
 
